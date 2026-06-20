@@ -27,7 +27,7 @@ const _cors = cors({
 });
 app.use(_cors);
 app.use(express.json())
-app.use("/content/", express.static(public_dir));
+app.use("/public/", express.static(public_dir));
 
 /**
 * @param {express.Request} req
